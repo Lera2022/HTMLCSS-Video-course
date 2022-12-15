@@ -1,0 +1,68 @@
+.heading {
+    color: purple;
+}
+
+.back-gray {
+    background-color: gray;
+}
+
+input[type="text"] {
+    color: red;
+}
+
+.input {
+    color: red;
+}
+
+.block {
+    width: 90%;
+    height: 300px;
+    border: 1px solid #000;
+    background-color: #ccc;
+    background-image: url(Kotyata-v-pletyonoj-korzine-720x405.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.heading {
+    text-align: center;
+}
+
+.text {
+    color: blue;
+    font-family: serif;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    color: green;
+}
+
+.menu>li {
+    border: 1px solid #000;
+}
+
+.menu+.text {
+    text-transform: uppercase;
+}
+
+.heading,
+.text {
+    text-align: left;
+}
+
+.heading {
+    color: purple;
+}
+
+.text {
+    color: green;
+
+}
