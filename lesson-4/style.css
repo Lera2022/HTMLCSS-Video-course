@@ -80,3 +80,46 @@
 .menu__list:hover .menu__link {
     text-decoration: none;
 }
+
+/* .menu__li_new:after {
+    content: ' super-new';
+    color: red;
+} */
+.menu__li:nth-child(3):after {
+    content: ' super-new';
+    color: red;
+}
+
+.menu__li:before {
+    content: '* ';
+    color: orange;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu__li:hover::after {
+    content: ' <<';
+}
+
+.product {
+    width: 250px;
+    border: 1px solid #000;
+}
+
+.product_new::after {
+    content: 'new';
+    text-transform: uppercase;
+    color: red;
+}
+
+.product__img {
+    height: 150px;
+    background-color: forestgreen;
+}
+
+.text::first-letter {
+    color: red;
+    font-size: 24px;
+}

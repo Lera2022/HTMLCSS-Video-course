@@ -9,52 +9,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="page">
-    <header>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="contacts.html">Контакты</a>
-        </nav>
-    </header>
-    <h2 class="contacts-heading">Contact Us</h2>
-    <p class="text">Lorem ip.</p>
-    <img src="img/PackeyMcFarland-350px.jpeg" alt="image">
-    <h4 class="heading4">Address</h4>
-    <p class="text">lorem</p>
-    <h4 class="heading4">Phone</h4>
-    <ul>
-        <li><a href="tel:+79786787676">+7 (978) 678 76 76</a></li>
-        <li><a href="tel:+79786787675">+7 (978) 678 76 75</a></li>
+<body>
+    <ul class="header">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
     </ul>
-    <h4 class="heading4">Online service</h4>
-    <ul>
-        <li><a href="https://www.google.com/">google.com</a>
-        <li><a href="mailto:name@example.com">name@example.com</a></li>
-    </ul>
-    <p class="text">119180, Россия, г. Москва ул. Большая Полянка, д. 43, стр. 3.</p>
-    <a href="tel:+79786787675">+7 (978) 678 76 75</a>
-    <form action="#" method="post">
-        <h4 class="heading4">Send us message</h4>
-        Full Name <input class="input-text" type="text"><br>
-        Email <input class="input-text" type="email"><br>
-        Message <textarea class="input-text" name="" id="" cols="30" rows="10"></textarea><br>
-        <button class="button-submit" type="submit">submit</button><br>
+    <div class="contacts-header">
+        <h2 class="heading-contacts">Contact Us</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore.</p>
+    </div>
+    <form action="#">
+        <div class="contacts-info">
+            <img src="img/contacts.png" alt="contacts photo">
+            <h4 class="heading-mini">Address</h4>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h4 class="heading-mini">Phone</h4>
+            <ul>
+                <li><a href="tel:+79786787676">+7 (978) 678 76 76</a></li>
+                <li><a href="tel:+79786787675">+7 (978) 678 76 75</a></li>
+            </ul>
+            <h4 class="heading-mini">Online service</h4>
+            <ul>
+                <li><a href="https://www.google.com/">google.com</a>
+                <li><a href="mailto:name@example.com">name@example.com</a></li>
+            </ul>
+            <p class="text">119180, Россия, г. Москва ул. Большая Полянка, д. 43, стр. 3.</p>
+            <a href="tel:+79786787675">+7 (978) 678 76 75</a>
+        </div>
+        <div class="form">
+            <h4 class="heading-mini">Send us message</h4>
+            Full Name <input class="input-text" type="text"><br>
+            Email <input class="input-text" type="email"><br>
+            Message<br>
+            <textarea class="input-text" name="" id="" cols="30" rows="10"></textarea><br>
+            <button class="button-submit" type="submit">submit</button>
+        </div>
     </form>
     <iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac348dbbda55fd9cfb3e65477b865f4d418af09deba7dea8b9b7359cfb4c3e144&amp;source=constructor"
         width="500" height="400" frameborder="0"></iframe>
-    <hr>
-    <footer>
-        <h3 class="heading3">Lorem ipsum dolor.</h3>
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="footer">
+        <div class="footer__top">
+            <div class="footer__text">
+                <h3 class="heading">Lorem ipsum dolor.</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
         <hr>
-        <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li><a href="tel:+79786787675">+7 (978) 678 76 75</a></li>
-            <li><a href="mailto:name@example.com">name@example.com</a></li>
-        </ul>
-        <p class="text">Все права защищены</p>
-    </footer>
+        <div class="footer__bottom">
+            <ul class="footer__info">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li><a href="tel:+79786787675">+7 (978) 678 76 75</a></li>
+                <li><a href="mailto:name@example.com">name@example.com</a></li>
+            </ul>
+            <div class="footer__copy">
+                <p class="text">Все права защищены</p>
+            </div>
+        </div>
+    </div>
 
 </body>
 
