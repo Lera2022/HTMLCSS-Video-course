@@ -1,5 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .page {
     font-family: sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top__info .text {
+    width: 425px;
 }
 
 .text {
@@ -11,6 +30,7 @@
 .top__heading {
     font-size: 64px;
     color: #1F3F68;
+    width: 510px;
 }
 
 .heading-contacts {
@@ -24,10 +44,40 @@
     text-align: center;
 }
 
+.card-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 359px;
+}
+
 .heading-mini {
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
+}
+
+.footer__text h3 {
+    width: 340px;
+}
+
+.footer__text p {
+    width: 495px;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info li {
+    flex-grow: 1;
+}
+
+.main {
+    display: flex;
 }
 
 .input-text {
@@ -47,4 +97,8 @@
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+iframe {
+    width: 100%;
 }

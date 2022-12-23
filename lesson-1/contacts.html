@@ -9,16 +9,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <ul class="header">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <div class="contacts-header">
-        <h2 class="heading-contacts">Contact Us</h2>
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore.</p>
+<body class="page">
+    <div class="container">
+        <ul class="header">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
     </div>
-    <form action="#">
+    <div class="contacts-header">
+        <div class="container">
+            <h2 class="heading-contacts">Contact Us</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore.</p>
+        </div>
+    </div>
+    <form action="#" class="container main">
         <div class="contacts-info">
             <img src="img/contacts.png" alt="contacts photo">
             <h4 class="heading-mini">Address</h4>
@@ -45,25 +49,30 @@
             <button class="button-submit" type="submit">submit</button>
         </div>
     </form>
-    <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac348dbbda55fd9cfb3e65477b865f4d418af09deba7dea8b9b7359cfb4c3e144&amp;source=constructor"
-        width="500" height="400" frameborder="0"></iframe>
+    <div class="container">
+        <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac348dbbda55fd9cfb3e65477b865f4d418af09deba7dea8b9b7359cfb4c3e144&amp;source=constructor"
+            width="500" height="400" frameborder="0"></iframe>
+    </div>
+
     <div class="footer">
-        <div class="footer__top">
-            <div class="footer__text">
-                <h3 class="heading">Lorem ipsum dolor.</h3>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__text">
+                    <h3 class="heading">Lorem ipsum dolor.</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit adipisicing elit.</p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="footer__bottom">
-            <ul class="footer__info">
-                <li>Lorem ipsum dolor sit amet</li>
-                <li><a href="tel:+79786787675">+7 (978) 678 76 75</a></li>
-                <li><a href="mailto:name@example.com">name@example.com</a></li>
-            </ul>
-            <div class="footer__copy">
-                <p class="text">Все права защищены</p>
+            <hr>
+            <div class="footer__bottom">
+                <ul class="footer__info">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li><a href="tel:+79786787675">+7 (978) 678 76 75</a></li>
+                    <li><a href="mailto:name@example.com">name@example.com</a></li>
+                </ul>
+                <div class="footer__copy">
+                    <p class="text">Все права защищены</p>
+                </div>
             </div>
         </div>
     </div>
