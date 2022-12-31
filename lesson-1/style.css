@@ -8,7 +8,7 @@
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -20,7 +20,7 @@
 
 
 .top {
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
@@ -37,6 +37,7 @@
     background-image: url(img/top__back.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 44%;
 }
 
 .top__info .text {
@@ -61,6 +62,7 @@
 }
 
 .top__heading {
+    width: 510px;
     font-size: 64px;
     color: #1F3F68;
     width: 510px;
@@ -159,6 +161,7 @@
     padding-bottom: 96px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer__heading {
@@ -169,6 +172,10 @@
     letter-spacing: 0.05em;
     color: #FFFFFF;
     margin-bottom: 32px;
+}
+
+.footer__text {
+    width: 495px;
 }
 
 .text_footer {
@@ -203,13 +210,15 @@ hr {
 .footer__list {
     flex-grow: 1;
     flex-basis: 33.3333%;
-    font-size: 16px;
     line-height: 26px;
+    font-size: 16px;
+    list-style-type: none;
     letter-spacing: 0.05em;
     color: #FFFFFF;
     opacity: 0.6;
     margin-right: 32px;
     display: flex;
+    list-style-type: none;
 }
 
 .footer__info a {
@@ -218,10 +227,16 @@ hr {
     color: inherit;
 }
 
-.footer__copy p {
+.footer__copy {
+    margin-top: 64px;
+}
+
+.footer__copy-text {
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
     color: #FFFFFF;
     opacity: 0.4;
-    margin-bottom: 64px;
 }
 
 .main {
@@ -286,4 +301,173 @@ hr {
 
 iframe {
     width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .top__info {
+        background-position: right 280px;
+    }
+
+    .card-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    .footer {
+        padding-top: 48px;
+    }
+
+    .footer__top {
+        padding-bottom: 64px;
+    }
+
+    .text_footer {
+        width: 336px;
+    }
+
+    .footer__button {
+        padding: 14px 31px;
+    }
+
+    .footer__info {
+        flex-direction: column;
+    }
+
+    .footer__list {
+        margin-bottom: 24px;
+    }
+
+
+}
+
+@media (max-width: 667px) {
+
+    .header {
+        padding-top: 24px;
+    }
+
+    .top {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+
+    .top__info {
+        padding-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+
+    .top__heading {
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .top__text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .top__button {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 8px;
+    }
+
+    .heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .what-we-do {
+        padding-top: 48px;
+    }
+
+    .card-box {
+        padding-top: 32px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .text_project {
+        width: 100%;
+    }
+
+    .project__text {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .project__text_mini {
+        left: 16px;
+    }
+
+    .project__parent {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .project__item__margin {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .footer {
+        padding-top: 18px;
+        padding-bottom: 32px;
+    }
+
+    .footer__heading {
+        text-align: center;
+        width: 75%;
+        margin: 0 auto 32px;
+    }
+
+    .text_footer {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .footer__top {
+        flex-direction: column;
+        padding-bottom: 41px;
+    }
+
+    .footer__text {
+        width: 100%;
+    }
+
+    .footer__button {
+        margin-top: 40px;
+        margin-bottom: 41px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .footer__list {
+        line-height: 19px;
+        margin-bottom: 18px;
+    }
+
+    .footer__copy {
+        margin-top: 32px;
+    }
 }
